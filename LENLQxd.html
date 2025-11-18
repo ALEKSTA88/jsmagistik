@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://cdpn.io/usernamenew/fullpage/LENLQxd?nocache=true&view=fullpage -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+    <script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.Без названия"></script>
+
+
+  <title>Anime.js / Engine / Engine parameters / speed example</title>
+
+    <link rel="canonical" href="https://codepen.io/usernamenew/pen/LENLQxd">
+  <style>
+  #docs-demos {
+    justify-content: center!important;
+    align-items: center!important;
+    left: 0!important;
+    width: 100%!important;
+    height: 100lvh!important;
+    padding-top: 0!important;
+    margin-left: 0!important;
+    background-color: var(--hex-current-4)!important;
+    border-radius: 0px!important;
+    box-shadow: none!important;
+  }
+  #docs-demos .docs-demo-html {
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-width: 19rem;
+  }
+  #docs-demos .iframe-content {
+    box-shadow: none;
+    overflow: visible;
+    border-radius: 0px;
+  }
+  #docs-demos .grid.large {
+    position: relative!important;
+    max-width: 19rem!important;
+    width: 100%!important;
+  }
+  #docs-demos .docs-demo-html:has(.scroll-container) {
+    position: absolute;
+    width: 100%;
+    min-height: 100lvh;
+  }
+  #docs-demos .scroll-container {
+    top: 0!important;
+    left: 0!important;
+    width: 100vw!important;
+    height: 100%!important;
+  }
+  #docs-demos .scroll-section {
+    width: 100%!important;
+    height: 100lvh!important;
+  }
+  #docs-demos .scroll-container .grid.large {
+    position: absolute !important;
+    width: 100%!important;
+    max-width: 100%!important;
+    height: 100%;
+  }
+  #docs-demos .scroll-container.scroll-x>.scroll-content {
+    width: 200%!important;
+  }
+  #docs-demos .scroll-container.scroll-y>.scroll-content {
+    min-height: 200%!important;
+  }
+</style>
+</head><body id="docs-demos" class="docs-demo-live centered docs-demo theme-color theme-color-13 is-active" translate="no"><div id="engine-engine-parameters-speed">
+  
+  <link rel="stylesheet" href="./styles.css">
+  
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+
+
+
+  <div class="docs-demo-html">
+  <div class="large centered row">
+  <p class="text-xl">Loading...</p>
+</div>
+<div class="small row"></div>
+  <div class="large row container"><div class="particle" style="transform: translateX(0.4788rem) translateY(0.1077rem) scale(0.1646);"></div><div class="particle" style="transform: translateX(-0.8224rem) translateY(-0.3902rem) scale(0.2535);"></div><div class="particle" style="transform: translateX(0.3923rem) translateY(0.1379rem) scale(0.1239);"></div><div class="particle" style="transform: translateX(0.1506rem) translateY(0.0902rem) scale(0.1276);"></div><div class="particle" style="transform: translateX(1.3238rem) translateY(-0.4042rem) scale(0.2843);"></div><div class="particle" style="transform: translateX(-0.1162rem) translateY(0.2972rem) scale(0.2604);"></div><div class="particle" style="transform: translateX(0.0308rem) translateY(-0.0241rem) scale(0.0317);"></div><div class="particle" style="transform: translateX(0.3194rem) translateY(-0.0214rem) scale(0.1276);"></div><div class="particle" style="transform: translateX(0.299rem) translateY(-0.0329rem) scale(0.1499);"></div><div class="particle" style="transform: translateX(0.7384rem) translateY(-0.0959rem) scale(0.3439);"></div><div class="particle" style="transform: translateX(-0.0606rem) translateY(-0.007rem) scale(0.063);"></div><div class="particle" style="transform: translateX(-0.7463rem) translateY(-0.0977rem) scale(0.2843);"></div><div class="particle" style="transform: translateX(-0.475rem) translateY(0.4057rem) scale(0.2775);"></div><div class="particle" style="transform: translateX(0.4779rem) translateY(-0.0722rem) scale(0.1314);"></div><div class="particle" style="transform: translateX(0.2353rem) translateY(-0.0856rem) scale(0.1314);"></div><div class="particle" style="transform: translateX(-0.0567rem) translateY(0.011rem) scale(0.3471);"></div><div class="particle" style="transform: translateX(0.2148rem) translateY(0.0936rem) scale(0.1792);"></div><div class="particle" style="transform: translateX(1.3514rem) translateY(0.1416rem) scale(0.3144);"></div><div class="particle" style="transform: translateX(0.062rem) translateY(0.0178rem) scale(0.0239);"></div><div class="particle" style="transform: translateX(0.0659rem) translateY(0.0375rem) scale(0.0937);"></div><div class="particle" style="transform: translateX(-0.0384rem) translateY(0.0138rem) scale(0.0474);"></div><div class="particle" style="transform: translateX(0.4414rem) translateY(-0.0636rem) scale(0.1013);"></div><div class="particle" style="transform: translateX(-0.5589rem) translateY(-0.1237rem) scale(0.2221);"></div><div class="particle" style="transform: translateX(-1.3321rem) translateY(0.2674rem) scale(0.2978);"></div><div class="particle" style="transform: translateX(-0.0126rem) translateY(0.158rem) scale(0.2221);"></div><div class="particle" style="transform: translateX(-0.2221rem) translateY(-0.2166rem) scale(0.2673);"></div><div class="particle" style="transform: translateX(0.1986rem) translateY(-0.0413rem) scale(0.0513);"></div><div class="particle" style="transform: translateX(-0.7353rem) translateY(0.3937rem) scale(0.321);"></div><div class="particle" style="transform: translateX(-1.4479rem) translateY(-0.4503rem) scale(0.3044);"></div><div class="particle" style="transform: translateX(0.0478rem) translateY(-0.3723rem) scale(0.2431);"></div><div class="particle" style="transform: translateX(0.3264rem) translateY(0.1276rem) scale(0.1719);"></div><div class="particle" style="transform: translateX(0.0106rem) translateY(0.0528rem) scale(0.1719);"></div><div class="particle" style="transform: translateX(0.0382rem) translateY(0.0184rem) scale(0.0278);"></div><div class="particle" style="transform: translateX(1.6885rem) translateY(0.3909rem) scale(0.3309);"></div><div class="particle" style="transform: translateX(-0.94rem) translateY(-0.32rem) scale(0.0001);"></div><div class="particle" style="transform: translateX(-0.0432rem) translateY(-0.011rem) scale(0.012);"></div><div class="particle" style="transform: translateX(0.1486rem) translateY(-0.0377rem) scale(0.1573);"></div><div class="particle" style="transform: translateX(-0.3283rem) translateY(0.0504rem) scale(0.0975);"></div><div class="particle" style="transform: translateX(-0.1606rem) translateY(-0.0422rem) scale(0.063);"></div><div class="particle" style="transform: translateX(-1.2031rem) translateY(-0.2937rem) scale(0.2396);"></div><div class="particle" style="transform: translateX(-0.1536rem) translateY(-0.0044rem) scale(0.0784);"></div><div class="particle" style="transform: translateX(-0.1484rem) translateY(-0.1858rem) scale(0.1314);"></div><div class="particle" style="transform: translateX(-0.0799rem) translateY(0.0137rem) scale(0.0278);"></div><div class="particle" style="transform: translateX(0.4704rem) translateY(-0.1685rem) scale(0.2431);"></div><div class="particle" style="transform: translateX(1.5698rem) translateY(-0.2109rem) scale(0.3243);"></div><div class="particle" style="transform: translateX(-0.1085rem) translateY(-0.0177rem) scale(0.0435);"></div><div class="particle" style="transform: translateX(1.0287rem) translateY(0.2601rem) scale(0.2535);"></div><div class="particle" style="transform: translateX(-0.3226rem) translateY(-0.0388rem) scale(0.0668);"></div><div class="particle" style="transform: translateX(0.1906rem) translateY(0.0243rem) scale(0.0513);"></div><div class="particle" style="transform: translateX(0.4724rem) translateY(0.0035rem) scale(0.1719);"></div><div class="particle" style="transform: translateX(-1.5476rem) translateY(0.3586rem) scale(0.3011);"></div><div class="particle" style="transform: translateX(0rem) translateY(0rem) scale(0);"></div><div class="particle" style="transform: translateX(-0.2069rem) translateY(-0.0355rem) scale(0.0899);"></div><div class="particle" style="transform: translateX(1.0815rem) translateY(-0.2945rem) scale(0.3078);"></div><div class="particle" style="transform: translateX(0.4531rem) translateY(0.0781rem) scale(0.1609);"></div><div class="particle" style="transform: translateX(0.0863rem) translateY(0.4211rem) scale(0.2809);"></div><div class="particle" style="transform: translateX(-0.8922rem) translateY(0.047rem) scale(0.2741);"></div><div class="particle" style="transform: translateX(-0.1054rem) translateY(0.2726rem) scale(0.2221);"></div><div class="particle" style="transform: translateX(-0.0794rem) translateY(0.1605rem) scale(0.1202);"></div><div class="particle" style="transform: translateX(-0.2937rem) translateY(0.0232rem) scale(0.1089);"></div><div class="particle" style="transform: translateX(0.1777rem) translateY(0.0464rem) scale(0.0435);"></div><div class="particle" style="transform: translateX(0.1229rem) translateY(-0.2931rem) scale(0.3341);"></div><div class="particle" style="transform: translateX(0rem) translateY(0rem) scale(0);"></div><div class="particle" style="transform: translateX(-0.0569rem) translateY(0.0281rem) scale(0.0199);"></div><div class="particle" style="transform: translateX(-0.1894rem) translateY(-0.0768rem) scale(0.1089);"></div><div class="particle" style="transform: translateX(-1.0072rem) translateY(0.3601rem) scale(0.2707);"></div><div class="particle" style="transform: translateX(0.9341rem) translateY(0.0272rem) scale(0.1828);"></div><div class="particle" style="transform: translateX(0.0515rem) translateY(-0.071rem) scale(0.2221);"></div><div class="particle" style="transform: translateX(0.4369rem) translateY(-0.0136rem) scale(0.1276);"></div><div class="particle" style="transform: translateX(0.9569rem) translateY(-0.2104rem) scale(0.215);"></div><div class="particle" style="transform: translateX(0.3502rem) translateY(-0.0402rem) scale(0.1573);"></div><div class="particle" style="transform: translateX(0.5293rem) translateY(-0.0102rem) scale(0.2809);"></div><div class="particle" style="transform: translateX(0.368rem) translateY(-0.0716rem) scale(0.0937);"></div><div class="particle" style="transform: translateX(0.8648rem) translateY(-0.116rem) scale(0.19);"></div><div class="particle" style="transform: translateX(0.3521rem) translateY(0.2656rem) scale(0.291);"></div><div class="particle" style="transform: translateX(1.019rem) translateY(0.2893rem) scale(0.2741);"></div><div class="particle" style="transform: translateX(0.4567rem) translateY(-0.0686rem) scale(0.0975);"></div><div class="particle" style="transform: translateX(0.4077rem) translateY(0.111rem) scale(0.0822);"></div><div class="particle" style="transform: translateX(-0.234rem) translateY(-0.0962rem) scale(0.2843);"></div><div class="particle" style="transform: translateX(-0.0619rem) translateY(-0.3548rem) scale(0.3111);"></div><div class="particle" style="transform: translateX(-0.1184rem) translateY(-0.0445rem) scale(0.0552);"></div><div class="particle" style="transform: translateX(1.0141rem) translateY(0.0456rem) scale(0.3111);"></div><div class="particle" style="transform: translateX(-0.481rem) translateY(0.1045rem) scale(0.1276);"></div><div class="particle" style="transform: translateX(-5.8896rem) translateY(0.29rem) scale(0.0003);"></div><div class="particle" style="transform: translateX(0.3596rem) translateY(-0.1433rem) scale(0.1051);"></div><div class="particle" style="transform: translateX(0.0127rem) translateY(-0.0532rem) scale(0.0435);"></div><div class="particle" style="transform: translateX(-0.039rem) translateY(-0.011rem) scale(0.0317);"></div><div class="particle" style="transform: translateX(-0.8813rem) translateY(-0.0962rem) scale(0.1972);"></div><div class="particle" style="transform: translateX(2.9199rem) translateY(-2.8499rem) scale(0.0001);"></div><div class="particle" style="transform: translateX(7.4097rem) translateY(-1.7599rem) scale(0.0001);"></div><div class="particle" style="transform: translateX(-1.0719rem) translateY(0.2943rem) scale(0.2221);"></div><div class="particle" style="transform: translateX(-1.0507rem) translateY(-0.0781rem) scale(0.2396);"></div><div class="particle" style="transform: translateX(-1.1288rem) translateY(-0.0804rem) scale(0.2809);"></div><div class="particle" style="transform: translateX(-9.9495rem) translateY(-0.82rem) scale(0.0002);"></div><div class="particle" style="transform: translateX(0.0533rem) translateY(-0.0694rem) scale(0.2396);"></div><div class="particle" style="transform: translateX(-0.2325rem) translateY(0.1237rem) scale(0.1089);"></div><div class="particle" style="transform: translateX(0.1754rem) translateY(0.0753rem) scale(0.0746);"></div><div class="particle" style="transform: translateX(1.1524rem) translateY(0.0732rem) scale(0.3111);"></div><div class="particle" style="transform: translateX(-1.3355rem) translateY(-0.1444rem) scale(0.2775);"></div><div class="particle" style="transform: translateX(0.1592rem) translateY(0.1135rem) scale(0.0822);"></div><div class="particle" style="transform: translateX(-0.2569rem) translateY(-0.1763rem) scale(0.1239);"></div><div class="particle" style="transform: translateX(-0.326rem) translateY(0.0538rem) scale(0.1051);"></div><div class="particle" style="transform: translateX(-0.4868rem) translateY(-0.0831rem) scale(0.1609);"></div><div class="particle" style="transform: translateX(0.1842rem) translateY(-0.0148rem) scale(0.0474);"></div><div class="particle" style="transform: translateX(0.2164rem) translateY(-0.0546rem) scale(0.0668);"></div><div class="particle" style="transform: translateX(0.6036rem) translateY(-0.1917rem) scale(0.1425);"></div><div class="particle" style="transform: translateX(0.4105rem) translateY(0.3031rem) scale(0.25);"></div><div class="particle" style="transform: translateX(0.1238rem) translateY(-0.1308rem) scale(0.2707);"></div><div class="particle" style="transform: translateX(0.9625rem) translateY(-0.1154rem) scale(0.2877);"></div><div class="particle" style="transform: translateX(0.3681rem) translateY(-0.0748rem) scale(0.0861);"></div><div class="particle" style="transform: translateX(-0.4155rem) translateY(-0.2933rem) scale(0.2256);"></div><div class="particle" style="transform: translateX(-0.6036rem) translateY(-0.0543rem) scale(0.215);"></div><div class="particle" style="transform: translateX(-0.954rem) translateY(-0.2221rem) scale(0.321);"></div><div class="particle" style="transform: translateX(0.4622rem) translateY(0.1351rem) scale(0.1683);"></div><div class="particle" style="transform: translateX(0.7928rem) translateY(0.2058rem) scale(0.1755);"></div><div class="particle" style="transform: translateX(-0.2402rem) translateY(-0.0204rem) scale(0.1089);"></div><div class="particle" style="transform: translateX(0.2065rem) translateY(-0.3061rem) scale(0.2775);"></div><div class="particle" style="transform: translateX(-1.82rem) translateY(-0.97rem) scale(0.0001);"></div><div class="particle" style="transform: translateX(-0.032rem) translateY(-0.004rem) scale(0.008);"></div><div class="particle" style="transform: translateX(0.3353rem) translateY(-0.1138rem) scale(0.0937);"></div><div class="particle" style="transform: translateX(1.4252rem) translateY(-0.2109rem) scale(0.2741);"></div><div class="particle" style="transform: translateX(-0.2704rem) translateY(0.2301rem) scale(0.2008);"></div><div class="particle" style="transform: translateX(0.4471rem) translateY(0.0859rem) scale(0.3044);"></div><div class="particle" style="transform: translateX(-4.3998rem) translateY(0.28rem) scale(0.0002);"></div><div class="particle" style="transform: translateX(0.4186rem) translateY(-0.0881rem) scale(0.1792);"></div><div class="particle" style="transform: translateX(0.4808rem) translateY(-0.3103rem) scale(0.2944);"></div><div class="particle" style="transform: translateX(-0.1432rem) translateY(-0.0575rem) scale(0.0591);"></div><div class="particle" style="transform: translateX(-1.4487rem) translateY(-0.3028rem) scale(0.3111);"></div><div class="particle" style="transform: translateX(-0.3316rem) translateY(-0.0886rem) scale(0.1536);"></div><div class="particle" style="transform: translateX(-0.1879rem) translateY(-0.1416rem) scale(0.2361);"></div><div class="particle" style="transform: translateX(-1.1221rem) translateY(-0.2572rem) scale(0.2256);"></div><div class="particle" style="transform: translateX(-1.1361rem) translateY(0.1318rem) scale(0.2361);"></div><div class="particle" style="transform: translateX(-0.1937rem) translateY(0.0474rem) scale(0.1388);"></div><div class="particle" style="transform: translateX(0.132rem) translateY(-0.0289rem) scale(0.0513);"></div><div class="particle" style="transform: translateX(0.3596rem) translateY(-0.1571rem) scale(0.1276);"></div><div class="particle" style="transform: translateX(0.0174rem) translateY(-0.0205rem) scale(0.0474);"></div><div class="particle" style="transform: translateX(-0.5941rem) translateY(0.2283rem) scale(0.1755);"></div><div class="particle" style="transform: translateX(1.2rem) translateY(0.1086rem) scale(0.3144);"></div><div class="particle" style="transform: translateX(-0.2768rem) translateY(0.0415rem) scale(0.0668);"></div><div class="particle" style="transform: translateX(0.0181rem) translateY(-0.0751rem) scale(0.1051);"></div><div class="particle" style="transform: translateX(-0.3615rem) translateY(-0.0405rem) scale(0.0899);"></div><div class="particle" style="transform: translateX(0.1528rem) translateY(0.1439rem) scale(0.1462);"></div><div class="particle" style="transform: translateX(0.3497rem) translateY(-0.0252rem) scale(0.0746);"></div><div class="particle" style="transform: translateX(-0.2914rem) translateY(0.0206rem) scale(0.063);"></div><div class="particle" style="transform: translateX(0rem) translateY(0rem) scale(0);"></div><div class="particle" style="transform: translateX(0.7096rem) translateY(0.0138rem) scale(0.2944);"></div><div class="particle" style="transform: translateX(0.7872rem) translateY(-0.2853rem) scale(0.1936);"></div><div class="particle" style="transform: translateX(0.218rem) translateY(-0.0732rem) scale(0.1646);"></div><div class="particle" style="transform: translateX(1.4797rem) translateY(0.3134rem) scale(0.3044);"></div><div class="particle" style="transform: translateX(-0.0375rem) translateY(0.0465rem) scale(0.0474);"></div></div>
+  <div class="medium row">
+  </div>
+</div>
+  
+    <script id="rendered-js" type="module">
+import { engine, animate, utils } from 'https://esm.sh/animejs';
+
+const [$container] = utils.$('.container');
+const [$range] = utils.$('.range');
+
+for (let i = 0; i < 150; i++) {if (window.CP.shouldStopExecution(0)) break;
+  const $particle = document.createElement('div');
+  $particle.classList.add('particle');
+  $container.appendChild($particle);
+  animate($particle, {
+    x: utils.random(-10, 10, 2) + 'rem',
+    y: utils.random(-3, 3, 2) + 'rem',
+    scale: [{ from: 0, to: 1 }, { to: 0 }],
+    delay: utils.random(0, 100),
+    loop: true });
+
+}window.CP.exitedLoop(0);
+
+function onInput() {
+  utils.sync(() => engine.speed = this.value);
+}
+
+$range.addEventListener('input', onInput);
+//# sourceURL=pen.js
+  </script>
+
+  
+
+
+
+</div></body></html>
